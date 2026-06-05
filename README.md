@@ -26,7 +26,7 @@ npm run dev
 
 ## Live Demo
 
-[Vercel URL coming soon]
+[https://auto-loan-dashboard.vercel.app](https://auto-loan-dashboard.vercel.app)
 
 ---
 
