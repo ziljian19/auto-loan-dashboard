@@ -329,23 +329,25 @@ export default function AutoLoanDashboard() {
       <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Barlow+Condensed:wght@400;600;700;800&display=swap" rel="stylesheet" />
 
       {/* Header */}
-      <header className={`border-b ${t.borderSub} px-6 py-4 flex items-center justify-between ${t.surface}`}>
-        <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded bg-amber-500 flex items-center justify-center">
-            <span className="text-white font-bold text-xs">AL</span>
+      <header className={`border-b ${t.borderSub} ${t.surface}`}>
+        <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <div className="w-8 h-8 rounded bg-amber-500 flex items-center justify-center">
+              <span className="text-white font-bold text-xs">AL</span>
+            </div>
+            <div>
+              <h1 style={{ fontFamily: "'Barlow Condensed', sans-serif" }} className={`text-xl font-bold tracking-wide uppercase ${t.text}`}>
+                AutoLoan <span className="text-amber-500">Research</span>
+              </h1>
+              <p className={`text-xs font-mono ${t.textMuted}`}>Vehicle Financing Intelligence Platform · Powered by NHTSA</p>
+            </div>
           </div>
-          <div>
-            <h1 style={{ fontFamily: "'Barlow Condensed', sans-serif" }} className={`text-xl font-bold tracking-wide uppercase ${t.text}`}>
-              AutoLoan <span className="text-amber-500">Research</span>
-            </h1>
-            <p className={`text-xs font-mono ${t.textMuted}`}>Vehicle Financing Intelligence Platform · Powered by NHTSA</p>
-          </div>
-        </div>
-        <div className="flex items-center gap-4">
-          <ThemeToggle dark={dark} onToggle={() => setDark(!dark)} />
-          <div className={`hidden md:flex items-center gap-2 text-xs font-mono ${t.textMuted}`}>
-            <span className="w-2 h-2 rounded-full bg-green-500 inline-block animate-pulse"></span>
-            Live Data · {new Date().toLocaleDateString()}
+          <div className="flex items-center gap-4">
+            <ThemeToggle dark={dark} onToggle={() => setDark(!dark)} />
+            <div className={`hidden md:flex items-center gap-2 text-xs font-mono ${t.textMuted}`}>
+              <span className="w-2 h-2 rounded-full bg-green-500 inline-block animate-pulse"></span>
+              Live Data · {new Date().toLocaleDateString()}
+            </div>
           </div>
         </div>
       </header>
