@@ -1,7 +1,14 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm create *)"
+      "Bash(npm create *)",
+      "Read(//mnt/c/**)",
+      "PowerShell(gh repo view ziljian19/space-command 2>&1)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
     ]
   }
 }
