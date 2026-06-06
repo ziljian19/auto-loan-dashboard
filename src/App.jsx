@@ -15,8 +15,8 @@ const POPULAR_MAKES = [
   "Nissan","Ram","Subaru","Tesla","Toyota","Volkswagen","Volvo"
 ];
 
-// Model year range
-const YEARS = Array.from({ length: 10 }, (_, i) => String(2024 - i));
+// Model year range — always current year back 10 years
+const YEARS = Array.from({ length: 10 }, (_, i) => String(new Date().getFullYear() - i));
 
 // Estimated MSRP lookup by make tier (fallback since NHTSA doesn't provide pricing)
 function estimateMSRP(make, year) {
