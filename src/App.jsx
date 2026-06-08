@@ -411,7 +411,7 @@ export default function AutoLoanDashboard() {
           </div>
 
           {/* Tabs */}
-          <div className={`flex gap-1 border-b ${t.borderSub} overflow-hidden`}>
+          <div className={`flex gap-1 border-b ${t.borderSub} overflow-x-auto scrollbar-none`}>
             {tabs.map((tab) => (
               <button key={tab} onClick={() => setActiveTab(tab)}
                 className={`px-4 py-2 text-xs font-mono uppercase tracking-widest transition-colors border-b-2 -mb-px whitespace-nowrap ${
